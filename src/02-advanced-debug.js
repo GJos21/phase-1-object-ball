@@ -3,7 +3,7 @@ debugger
 
 // first, define the function.
 function goodPractices() {
-  let game = gameObject();
+  let game = gameObject;
   for (let gameKey in game) {
     // are you ABSOLUTELY SURE what 'gameKey' is?
     // use the debugger to find out!
