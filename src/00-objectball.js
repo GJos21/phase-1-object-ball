@@ -355,13 +355,7 @@ function playersObj() {
 }
 
 function numPointsScoredNew(playerName) {
-    const players = Object.entries(playersObj());
-    let points;
-
-    playerArray = players.find((player) => player[0] === playerName)
-    points = playerArray[1].points;
-
-    return points;
+    return playersObj()[playerName].points;
 }
 
 console.log(`${[playerName]} scored ${numPointsScoredNew(playerName)} points!`);
